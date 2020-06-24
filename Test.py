@@ -334,7 +334,7 @@ def number_render(AT, AP, RH, V):
         raise PreventUpdate
     inpList = [[AT, AP, RH, V]]
     asd = ann.predict(inpList)
-    words = "Net Hourly Electrical Energy Output (PE) is " + str(asd).replace("[", "").replace("]", "") + "kwh"
+    words = "Net Hourly Electrical Energy Output (PE) is " + str(asd).replace("[", "").replace("]", "") + " MW/h"
     return words
 
 
