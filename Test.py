@@ -119,8 +119,15 @@ app.layout = html.Div(
                 fixed_rows={'headers': True, 'data': 0}
             )]),
         html.Div([
+            html.H2(
+                "Feature Correlation:",
+                style={"margin-bottom": "5px",
+                       "margin-top": "25px",
+                       'display': 'inline-block'}, )
+        ]),
+        html.Div([
             html.Div([
-                html.H6(
+                html.H5(
                     """Scatter Matrix
                     """,
                     style={"margin-top": "12px",
@@ -130,7 +137,7 @@ app.layout = html.Div(
             ],
                 className="six columns"),
             html.Div([
-                html.H6(
+                html.H5(
                     """Heatmap
                     """,
                     style={"margin-top": "12px",
@@ -151,7 +158,7 @@ app.layout = html.Div(
                         "height": "800px",
                         "width": "900px",
                         "margin-bottom": "25px",
-                        "margin-top": "7px",
+                        "margin-top": "3px",
                     },
                 )
             ],
@@ -171,6 +178,13 @@ app.layout = html.Div(
                 className="six column")
         ],
             className='row flex-display'),
+        html.Div([
+            html.H2(
+                "Training Models and Prediction Accuracy:",
+                style={"margin-bottom": "0px",
+                       "margin-top": "15px",
+                       'display': 'inline-block'}, )
+        ]),
 
         html.Div([
             html.H6(
